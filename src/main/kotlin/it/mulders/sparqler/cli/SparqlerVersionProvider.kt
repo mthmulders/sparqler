@@ -6,5 +6,5 @@ import picocli.CommandLine
 
 @ApplicationScoped
 class SparqlerVersionProvider(@ConfigProperty(name = "quarkus.application.version") val version: String) : CommandLine.IVersionProvider {
-    override fun getVersion(): Array<String>? = arrayOf("Sparqler v${version}")
+    override fun getVersion(): Array<String> = arrayOf("Sparqler v${version}")
 }
